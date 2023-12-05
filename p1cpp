@@ -1,0 +1,40 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int choice;
+    float area,length,width,radius;
+    cout<<"1-Area of circle\n";
+cout<<"2-Area of Reactangle\n";
+cout<<"3-Area of Square\n";
+cout<<"Enter your choice::";
+cin>> choice;
+switch(choice)
+{
+    case 1:
+    cout<<"Enter the radius of circle=";
+    cin>>radius;
+    area=3.24*radius*radius;
+    break;
+    
+    case 2:
+    cout<<"Enter the length of rectangle=";
+    cin>>length;
+    cout<<"Enter the width of rectangle=";
+    cin>> width;
+    area=length*width;
+    break;
+    
+    case 3:
+    cout<<"Enter the length of square=";
+    cin>>length;
+    area=length*length;
+    break;
+    
+    default:
+    cout<<"Invalid choice chosen..........!=";
+}
+cout<<"\n Area::"<<area<<endl;
+return 0;
+}
